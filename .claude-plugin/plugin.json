@@ -1,11 +1,23 @@
 {
   "name": "alice-acces-aux-soins",
   "displayName": "Alice, accès aux soins en France",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Où se soigner autour d'une commune française. Que valent les indicateurs d'accès aux soins : établissements FINESS à proximité, accessibilité aux professionnels (APL de la DREES), organisation des soins. Données publiques, fiabilisées par France Care.",
-  "author": { "name": "France Care", "url": "https://www.france-care.fr" },
-  "homepage": "https://alice.france-care.fr",
+  "author": {
+    "name": "France Care",
+    "email": "contact@france-care.fr",
+    "url": "https://www.france-care.fr"
+  },
+  "homepage": "https://alice.france-care.fr/plugin",
   "repository": "https://github.com/France-Care/claude-plugin-alice",
   "license": "MIT",
-  "keywords": ["santé", "accès aux soins", "France", "FINESS", "DREES", "APL", "déserts médicaux"]
+  "keywords": [
+    "santé",
+    "accès aux soins",
+    "France",
+    "FINESS",
+    "DREES",
+    "APL",
+    "déserts médicaux"
+  ]
 }

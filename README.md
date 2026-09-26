@@ -23,6 +23,8 @@ jour chaque jour.
     la DREES, moyenne nationale) et répondre à « désert médical ? » par les classements
     officiels (zonage de l'ARS, zones prioritaires du Pacte).
 
+Documentation : https://alice.france-care.fr/plugin
+
 ## Exemples
 
 - « Où trouver un dentiste près de Guéret ? »
@@ -34,6 +36,10 @@ jour chaque jour.
 Le connecteur ne demande aucun compte. Il reçoit le nom de commune, le code postal ou le
 type d'établissement que Claude lui transmet. Il ne conserve ni la question ni la
 réponse. Aucune donnée de santé personnelle n'est demandée ni traitée.
+
+Les journaux techniques du serveur web gardent l'adresse IP et l'adresse appelée, pas le
+contenu de la requête, pendant 14 jours. Ils servent à la sécurité et à la limitation
+des abus.
 
 Ce qui est enregistré, sur les serveurs de France Care en France : des totaux quotidiens
 anonymes des recherches (commune ou département, type de lieu, recherche vide ou non) et
@@ -49,6 +55,10 @@ Le plugin ne recueille aucune coordonnée. Une personne qui souhaite être accom
 un conseiller France Care reçoit le lien de sa page de contact, où elle donne elle-même
 son accord.
 
+Le plugin n'envoie rien à un autre service que ce connecteur. Politique de
+confidentialité : https://alice.france-care.fr/confidentialite. Exercice de vos droits :
+dpo@france-care.fr.
+
 Alice oriente. Elle ne pose pas de diagnostic et ne remplace pas un professionnel de
 santé. En cas d'urgence, appelez le 15 ou le 112.
 
@@ -62,6 +72,10 @@ détaillée : ressource `france-care://methodology` du connecteur.
 Vous éditez un service de santé (téléconsultation, réseau de soins, centre, application
 de prévention) et vous souhaitez que ses données soient accessibles à Claude par Alice :
 écrivez-nous à contact@france-care.fr.
+
+## Support
+
+contact@france-care.fr
 
 ## Éditeur
 
