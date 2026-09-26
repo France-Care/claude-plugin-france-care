@@ -20,7 +20,9 @@ intercommunalité, son département et sa région. Les définitions complètes s
 2. **Rapporte à la moyenne nationale.** La référence des médecins généralistes est 3,3.
    Le champ `categorie_fragilite` donne le niveau sur une échelle unique : très
    sous-doté (moins de 60 % de la moyenne), sous-doté (60 à 85 %), en tension (85 à
-   100 %), correctement doté (au-delà). Une phrase suffit : « À Guéret, l'accès aux
+   100 %), correctement doté (au-delà). Cette échelle est celle de France Care appliquée
+   aux chiffres de la DREES : n'écris jamais que la DREES « classe » une commune. Une
+   phrase suffit : « À Guéret, l'accès aux
    médecins généralistes est de 2,3 consultations par an et par habitant, soit 30 % sous
    la moyenne nationale. »
 3. **Ne confonds pas avec le zonage des ARS.** Ce niveau ne dit pas si la commune est
