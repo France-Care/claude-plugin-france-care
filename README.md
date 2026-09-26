@@ -19,8 +19,9 @@ jour chaque jour.
 - **Deux skills** :
   - `trouver-ou-se-soigner` : chercher les lieux de soins proches et les démarches utiles
     (médecin traitant, permanence des soins, pharmacie de garde) ;
-  - `lire-indicateurs-acces-aux-soins` : lire l'APL sans contresens (unités, moyenne
-    nationale, différence avec le zonage des ARS).
+  - `lire-indicateurs-acces-aux-soins` : lire l'APL sans contresens (unités, seuil de
+    la DREES, moyenne nationale) et répondre à « désert médical ? » par les classements
+    officiels (zonage de l'ARS, zones prioritaires du Pacte).
 
 ## Exemples
 

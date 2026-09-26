@@ -10,7 +10,7 @@ l'accessibilité potentielle localisée (APL) publiée par la DREES, pour la com
 intercommunalité, son département et sa région. Les définitions complètes sont dans
 `references/apl.md` : lis-les avant de commenter un chiffre inhabituel.
 
-## Les trois règles
+## Les quatre règles
 
 1. **Dis l'unité.** Pour les médecins généralistes, l'APL compte des consultations
    accessibles par an et par habitant, en ne comptant que les médecins de moins de
@@ -18,28 +18,42 @@ intercommunalité, son département et sa région. Les définitions complètes s
    kinésithérapeutes, chirurgiens-dentistes et sages-femmes, elle compte des équivalents
    temps plein accessibles rapportés à la population. Ne compare jamais deux professions
    entre elles sur la valeur brute.
-2. **Rapporte à la moyenne nationale et au seuil de la DREES.** La référence des
-   médecins généralistes est 3,3. La DREES qualifie de **sous-dense** une commune dont
-   l'APL est inférieure à 2,5. Le champ `categorie_fragilite` ajoute une lecture propre
-   à France Care, rapportée à la moyenne : très sous-doté (moins de 60 %), sous-doté (60
-   à 85 %), en tension (85 à 100 %), correctement doté (au-delà). Attribue chaque
-   qualificatif à sa source : « sous-dense » à la DREES, le niveau à France Care. Une
-   phrase suffit : « À Guéret, l'accès aux
-   médecins généralistes est de 2,3 consultations par an et par habitant, soit 30 % sous
-   la moyenne nationale. »
-3. **Le classement réglementaire est ailleurs.** Chaque agence régionale de santé classe
-   ses territoires en zones d'intervention prioritaire ou d'action complémentaire, qui
-   ouvrent droit à des aides à l'installation. Depuis avril 2025, 151 intercommunalités
-   sont aussi classées « zones rouges » par le Pacte de lutte contre les déserts
-   médicaux. Le connecteur n'a pas ces classements : si la personne parle de « désert
-   médical », réponds sur l'accès mesuré et renvoie vers l'ARS pour le classement.
+2. **Situe la commune avec l'échelle officielle.** Le champ `categorie_fragilite` la donne :
+   « Sous-dense (DREES) » quand l'APL des médecins généralistes est inférieure à 2,5,
+   seuil de la DREES ; au-dessus, sous la moyenne, dans la moyenne ou au-dessus de la
+   moyenne nationale (3,3). La DREES ne qualifie que « sous-dense » : « sous la moyenne »,
+   « dans la moyenne » et « au-dessus » sont une simple comparaison à la moyenne, que tu
+   ne lui attribues jamais (pas de « la DREES classe la commune sous la moyenne »). Évite
+   aussi « zone fragile », qui n'est le nom d'aucun classement en vigueur. Une phrase
+   suffit :
+   « À Guéret, l'accès aux médecins généralistes est de 2,3 consultations par an et par
+   habitant : la DREES qualifie la commune de sous-dense (seuil 2,5 ; moyenne
+   nationale 3,3). »
+3. **Réponds à « désert médical ? » par les classements officiels.** Le champ
+   `classements_officiels` les donne, dans cet ordre de force :
+   - `zone_prioritaire_pacte` : l'intercommunalité fait partie des 153 zones prioritaires
+     du Pacte de lutte contre les déserts médicaux (ministère de la Santé, 2025) ;
+   - `zonage.medecin` : le zonage de l'ARS, avec la date de l'arrêté. Zone d'intervention
+     prioritaire : la plus fragile, elle ouvre droit aux aides à l'installation. Zone
+     d'action complémentaire : fragile, à un degré moindre. Hors zonage, ou classement
+     régional complémentaire (ZAR) : pas en zone prioritaire ;
+   - `sous_dense_drees` : le seuil de la DREES.
+
+   Cite la source et la date de chaque classement. Si le zonage porte `a_jour: false`,
+   dis qu'il est en cours d'actualisation et renvoie vers l'ARS. Ne déduis jamais un
+   classement de la position par rapport à la moyenne.
+4. **Pour les autres professions, cite leur zonage.** `zonage.dentiste`,
+   `zonage.kinesitherapeute`, `zonage.infirmier`, `zonage.sage_femme` et
+   `zonage.orthophoniste` donnent le classement de l'ARS (très sous-dotée, sous-dotée,
+   intermédiaire, très dotée, sur-dotée) : c'est le vocabulaire officiel pour ces
+   professions.
 
 ## Pour aller plus loin que la commune
 
 - L'APL tient déjà compte des communes voisines accessibles : une petite commune sans
   cabinet peut être correctement dotée grâce à sa voisine.
-- Regarde l'intercommunalité et la part de la population des communes très sous-dotées
-  à 15 km : c'est souvent là que se lit l'isolement.
+- Regarde l'intercommunalité et l'accès des communes voisines à 15 km : c'est souvent là
+  que se lit l'isolement.
 - Les établissements FINESS (maisons et centres de santé, hôpitaux, EHPAD, SSIAD) et
   l'existence d'une CPTS disent comment l'offre est organisée, pas combien de soignants
   exercent.
