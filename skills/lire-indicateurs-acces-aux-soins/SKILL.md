@@ -13,23 +13,26 @@ intercommunalité, son département et sa région. Les définitions complètes s
 ## Les trois règles
 
 1. **Dis l'unité.** Pour les médecins généralistes, l'APL compte des consultations
-   accessibles par an et par habitant de moins de 65 ans. Pour les infirmiers,
+   accessibles par an et par habitant, en ne comptant que les médecins de moins de
+   65 ans. Pour les infirmiers,
    kinésithérapeutes, chirurgiens-dentistes et sages-femmes, elle compte des équivalents
    temps plein accessibles rapportés à la population. Ne compare jamais deux professions
    entre elles sur la valeur brute.
-2. **Rapporte à la moyenne nationale.** La référence des médecins généralistes est 3,3.
-   Le champ `categorie_fragilite` donne le niveau sur une échelle unique : très
-   sous-doté (moins de 60 % de la moyenne), sous-doté (60 à 85 %), en tension (85 à
-   100 %), correctement doté (au-delà). Cette échelle est celle de France Care appliquée
-   aux chiffres de la DREES : n'écris jamais que la DREES « classe » une commune. Une
+2. **Rapporte à la moyenne nationale et au seuil de la DREES.** La référence des
+   médecins généralistes est 3,3. La DREES qualifie de **sous-dense** une commune dont
+   l'APL est inférieure à 2,5. Le champ `categorie_fragilite` ajoute une lecture propre
+   à France Care, rapportée à la moyenne : très sous-doté (moins de 60 %), sous-doté (60
+   à 85 %), en tension (85 à 100 %), correctement doté (au-delà). Attribue chaque
+   qualificatif à sa source : « sous-dense » à la DREES, le niveau à France Care. Une
    phrase suffit : « À Guéret, l'accès aux
    médecins généralistes est de 2,3 consultations par an et par habitant, soit 30 % sous
    la moyenne nationale. »
-3. **Ne confonds pas avec le zonage des ARS.** Ce niveau ne dit pas si la commune est
-   classée zone d'intervention prioritaire. Ce classement relève de chaque agence
-   régionale de santé et ouvre droit à des aides à l'installation. Si la personne parle de
-   « désert médical », réponds sur l'accès mesuré. Précise que le classement officiel se
-   vérifie auprès de l'ARS.
+3. **Le classement réglementaire est ailleurs.** Chaque agence régionale de santé classe
+   ses territoires en zones d'intervention prioritaire ou d'action complémentaire, qui
+   ouvrent droit à des aides à l'installation. Depuis avril 2025, 151 intercommunalités
+   sont aussi classées « zones rouges » par le Pacte de lutte contre les déserts
+   médicaux. Le connecteur n'a pas ces classements : si la personne parle de « désert
+   médical », réponds sur l'accès mesuré et renvoie vers l'ARS pour le classement.
 
 ## Pour aller plus loin que la commune
 
