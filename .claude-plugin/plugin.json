@@ -1,15 +1,15 @@
 {
-  "name": "alice-acces-aux-soins",
-  "displayName": "Alice, accès aux soins en France",
-  "version": "1.1.0",
-  "description": "Où se soigner autour d'une commune française. Que valent les indicateurs d'accès aux soins : établissements FINESS à proximité, accessibilité aux professionnels (APL de la DREES), organisation des soins. Données publiques, fiabilisées par France Care.",
+  "name": "france-care",
+  "displayName": "France Care",
+  "version": "1.2.0",
+  "description": "Accès aux soins en France : où se soigner autour d'une commune, niveau d'accès aux professionnels de santé (APL de la DREES) et classements officiels (seuil de sous-densité, zonage de l'ARS, zones prioritaires du Pacte). Données publiques, fiabilisées par France Care.",
   "author": {
     "name": "France Care",
     "email": "contact@france-care.fr",
     "url": "https://www.france-care.fr"
   },
-  "homepage": "https://alice.france-care.fr/plugin",
-  "repository": "https://github.com/France-Care/claude-plugin-alice",
+  "homepage": "https://mcp.france-care.fr/plugin",
+  "repository": "https://github.com/France-Care/claude-plugin-france-care",
   "license": "MIT",
   "keywords": [
     "santé",

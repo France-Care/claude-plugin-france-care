@@ -5,7 +5,7 @@ description: Lire sans contresens les indicateurs d'accès aux soins d'un territ
 
 # Lire les indicateurs d'accès aux soins
 
-Les outils `analyze_territory` et `compare_territories` du connecteur Alice renvoient
+Les outils `analyze_territory` et `compare_territories` du connecteur France Care renvoient
 l'accessibilité potentielle localisée (APL) publiée par la DREES, pour la commune, son
 intercommunalité, son département et sa région. Les définitions complètes sont dans
 `references/apl.md` : lis-les avant de commenter un chiffre inhabituel.

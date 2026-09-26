@@ -1,18 +1,18 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.France-Care/alice-territorial",
-  "title": "Alice, accès aux soins en France",
-  "description": "Accès aux soins par commune en France : lieux FINESS, APL DREES, zonage ARS. Lecture seule.",
-  "websiteUrl": "https://alice.france-care.fr/plugin",
+  "name": "io.github.France-Care/france-care",
+  "title": "France Care, accès aux soins en France",
+  "description": "Accès aux soins par commune en France : lieux FINESS, APL DREES, zonage ARS, zones du Pacte.",
+  "websiteUrl": "https://mcp.france-care.fr/plugin",
   "repository": {
-    "url": "https://github.com/France-Care/claude-plugin-alice",
+    "url": "https://github.com/France-Care/claude-plugin-france-care",
     "source": "github"
   },
-  "version": "1.1.0",
+  "version": "1.0.0",
   "remotes": [
     {
       "type": "streamable-http",
-      "url": "https://alice.france-care.fr/api/mcp"
+      "url": "https://mcp.france-care.fr/mcp"
     }
   ],
   "_meta": {
@@ -23,9 +23,8 @@
         "civic-data",
         "France"
       ],
-      "documentation": "https://alice.france-care.fr/plugin",
-      "privacyPolicy": "https://alice.france-care.fr/confidentialite",
-      "manifest": "https://alice.france-care.fr/.well-known/mcp.json"
+      "documentation": "https://mcp.france-care.fr/plugin",
+      "privacyPolicy": "https://mcp.france-care.fr/confidentialite"
     }
   }
 }

@@ -1,8 +1,8 @@
 {
   "mcpServers": {
-    "alice": {
+    "france-care": {
       "type": "http",
-      "url": "https://alice.france-care.fr/api/mcp"
+      "url": "https://mcp.france-care.fr/mcp"
     }
   }
 }

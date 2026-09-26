@@ -1,14 +1,15 @@
-# Alice, accès aux soins en France
+# France Care, accès aux soins en France
 
-Alice aide Claude à répondre à deux questions : **où se soigner autour d'une commune
-française** ; **que valent les indicateurs d'accès aux soins** d'un territoire. Elle
-s'appuie sur des données publiques (répertoire FINESS des établissements, accessibilité
+Le plugin France Care aide Claude à répondre à deux questions : **où se soigner autour
+d'une commune française** ; **que valent les indicateurs d'accès aux soins** d'un
+territoire. Il s'appuie sur des données publiques (répertoire FINESS des établissements, accessibilité
 potentielle localisée de la DREES, INSEE) que France Care corrige, géolocalise et met à
 jour chaque jour.
 
 ## Ce que contient le plugin
 
-- **Le connecteur Alice** (`https://alice.france-care.fr/api/mcp`), en lecture seule :
+- **Le connecteur France Care** (`https://mcp.france-care.fr/mcp`), trois outils en
+  lecture et un signalement anonyme :
   - `analyze_territory` : accès aux soins d'une commune, de son intercommunalité, de son
     département et de sa région ;
   - `compare_territories` : deux territoires sur les mêmes indicateurs ;
@@ -23,7 +24,7 @@ jour chaque jour.
     la DREES, moyenne nationale) et répondre à « désert médical ? » par les classements
     officiels (zonage de l'ARS, zones prioritaires du Pacte).
 
-Documentation : https://alice.france-care.fr/plugin
+Documentation : https://mcp.france-care.fr/plugin
 
 ## Exemples
 
@@ -56,21 +57,22 @@ un conseiller France Care reçoit le lien de sa page de contact, où elle donne 
 son accord.
 
 Le plugin n'envoie rien à un autre service que ce connecteur. Politique de
-confidentialité : https://alice.france-care.fr/confidentialite. Exercice de vos droits :
+confidentialité : https://mcp.france-care.fr/confidentialite. Exercice de vos droits :
 dpo@france-care.fr.
 
-Alice oriente. Elle ne pose pas de diagnostic et ne remplace pas un professionnel de
+France Care oriente. Le plugin ne pose pas de diagnostic et ne remplace pas un professionnel de
 santé. En cas d'urgence, appelez le 15 ou le 112.
 
 ## Sources
 
-DREES (APL, millésime 2023), FINESS (synchronisé chaque jour), INSEE, RNA. Méthodologie
+DREES (APL, millésime 2023), FINESS (synchronisé chaque jour), zonage des ARS (fichier
+national DataSanté), ministère de la Santé (zones prioritaires du Pacte), INSEE, RNA. Méthodologie
 détaillée : ressource `france-care://methodology` du connecteur.
 
 ## Intégrer votre service
 
 Vous éditez un service de santé (téléconsultation, réseau de soins, centre, application
-de prévention) et vous souhaitez que ses données soient accessibles à Claude par Alice :
+de prévention) et vous souhaitez que ses données soient accessibles à Claude par France Care :
 écrivez-nous à contact@france-care.fr.
 
 ## Support
@@ -80,4 +82,4 @@ contact@france-care.fr
 ## Éditeur
 
 France Care (Care Connect SAS), https://www.france-care.fr. Licence MIT pour le contenu
-de ce dépôt ; le serveur Alice et ses données sont servis par France Care.
+de ce dépôt ; le serveur et ses données sont servis par France Care.
