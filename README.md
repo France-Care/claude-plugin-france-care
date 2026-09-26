@@ -40,6 +40,10 @@ des signalements de besoins non couverts (commune, profession, nature du manque,
 listes fermées). Ni adresse IP, ni texte saisi, ni session. France Care s'en sert pour
 mesurer où la demande de soins reste sans réponse.
 
+Les signalements alimentent une carte publique, en données ouvertes :
+https://alice.france-care.fr/besoins. Une commune n'y apparaît qu'à partir de 5
+signalements.
+
 Le plugin ne recueille aucune coordonnée. Une personne qui souhaite être accompagnée par
 un conseiller France Care reçoit le lien de sa page de contact, où elle donne elle-même
 son accord.
