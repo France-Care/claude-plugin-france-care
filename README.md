@@ -13,7 +13,9 @@ jour chaque jour.
     département et de sa région ;
   - `compare_territories` : deux territoires sur les mêmes indicateurs ;
   - `search_health_infrastructure` : établissements de santé autour d'un lieu, triés par
-    distance, avec leur téléphone quand il est public.
+    distance, avec leur téléphone quand il est public ;
+  - `signaler_besoin_non_couvert` : signaler, avec l'accord de la personne, qu'elle n'a
+    pas trouvé de soignant dans sa commune.
 - **Deux skills** :
   - `trouver-ou-se-soigner` : chercher les lieux de soins proches et les démarches utiles
     (médecin traitant, permanence des soins, pharmacie de garde) ;
@@ -31,6 +33,16 @@ jour chaque jour.
 Le connecteur ne demande aucun compte. Il reçoit le nom de commune, le code postal ou le
 type d'établissement que Claude lui transmet. Il ne conserve ni la question ni la
 réponse. Aucune donnée de santé personnelle n'est demandée ni traitée.
+
+Ce qui est enregistré, sur les serveurs de France Care en France : des totaux quotidiens
+anonymes des recherches (commune ou département, type de lieu, recherche vide ou non) et
+des signalements de besoins non couverts (commune, profession, nature du manque, sur
+listes fermées). Ni adresse IP, ni texte saisi, ni session. France Care s'en sert pour
+mesurer où la demande de soins reste sans réponse.
+
+Le plugin ne recueille aucune coordonnée. Une personne qui souhaite être accompagnée par
+un conseiller France Care reçoit le lien de sa page de contact, où elle donne elle-même
+son accord.
 
 Alice oriente. Elle ne pose pas de diagnostic et ne remplace pas un professionnel de
 santé. En cas d'urgence, appelez le 15 ou le 112.
