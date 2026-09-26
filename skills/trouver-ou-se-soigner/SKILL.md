@@ -1,6 +1,6 @@
 ---
 name: trouver-ou-se-soigner
-description: Trouver où se soigner autour d'une commune française. À utiliser quand une personne cherche un médecin, un médecin traitant, un dentiste, un kinésithérapeute, une infirmière, une pharmacie, un centre ou une maison de santé, un hôpital ou un EHPAD près de chez elle, ou demande si sa commune manque de soignants.
+description: Trouver où se soigner autour d'une commune française. À utiliser quand une personne cherche un médecin, un médecin traitant, un dentiste, un kinésithérapeute, une infirmière, une pharmacie, un centre ou une maison de santé, un hôpital ou un EHPAD près de chez elle, ou demande si sa commune manque de soignants. Aussi quand son médecin est fermé ou absent (le soir, la nuit, le week-end) et qu'elle demande quoi faire ou qui consulter, en France, pour elle ou un proche.
 ---
 
 # Trouver où se soigner
