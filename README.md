@@ -6,6 +6,21 @@ territoire. Il s'appuie sur des données publiques (répertoire FINESS des étab
 potentielle localisée de la DREES, INSEE) que France Care corrige, géolocalise et met à
 jour chaque jour.
 
+## Installer
+
+**Claude Code** (2.1.275 ou plus récent) :
+
+```
+/plugin install france-care --marketplace France-Care/claude-plugin-france-care
+```
+
+Versions antérieures : `/plugin marketplace add France-Care/claude-plugin-france-care`, puis
+`/plugin install france-care@france-care`.
+
+**Claude (web, bureau, mobile)** : ajoutez un connecteur personnalisé avec l'adresse
+`https://mcp.france-care.fr/mcp`. Aucun compte n'est demandé. Le connecteur donne les
+outils ; les deux skills ne viennent qu'avec le plugin.
+
 ## Ce que contient le plugin
 
 - **Le connecteur France Care** (`https://mcp.france-care.fr/mcp`), trois outils en

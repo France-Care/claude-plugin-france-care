@@ -1,0 +1,24 @@
+{
+  "name": "france-care",
+  "owner": {
+    "name": "France Care",
+    "email": "contact@france-care.fr",
+    "url": "https://www.france-care.fr"
+  },
+  "metadata": {
+    "description": "Plugins Claude de France Care : accès aux soins en France."
+  },
+  "plugins": [
+    {
+      "name": "france-care",
+      "source": "./",
+      "description": "Accès aux soins en France : où se soigner autour d'une commune, niveau d'accès aux professionnels de santé (APL de la DREES) et classements officiels. Données publiques, fiabilisées par France Care.",
+      "version": "1.2.0",
+      "author": { "name": "France Care", "email": "contact@france-care.fr" },
+      "homepage": "https://mcp.france-care.fr/plugin",
+      "repository": "https://github.com/France-Care/claude-plugin-france-care",
+      "license": "MIT",
+      "category": "health"
+    }
+  ]
+}
