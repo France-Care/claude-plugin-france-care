@@ -141,6 +141,56 @@
     "idempotentHint": false,
     "openWorldHint": false
    }
+  },
+  {
+   "name": "animations_sante_entreprise",
+   "description": "Fiches du guide France Care des animations de prevention sante en entreprise (atelier, stand, conference, campagne de depistage) : le probleme regle, le deroule pas a pas, le cout, la preparation, les partenaires publics ou associatifs, la vigilance, l'efficacite publiee et les sources, avec la date de verification et le lien vers la page. A utiliser quand un employeur, un DRH, un CSE ou un preventeur cherche une idee d'action de prevention pour ses salaries, par theme (TMS, sante mentale, cancers et depistages, tabac, sommeil, salaries aidants) ou par mois (Octobre rose, Mois sans tabac). Sans argument : la liste des thematiques. Les fiches validees seulement ; aucune donnee personnelle.",
+   "inputSchema": {
+    "type": "object",
+    "properties": {
+     "sujet": {
+      "type": "string",
+      "description": "Une thematique du guide (appeler sans argument pour la liste) ou les mots de la question (ex. TMS, depistage du cancer du sein)."
+     },
+     "mois": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 12,
+      "description": "Mois de realisation, de 1 a 12 (10 pour Octobre rose, 11 pour le Mois sans tabac)."
+     },
+     "limit": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 20,
+      "description": "Nombre de fiches au plus (defaut 8)."
+     }
+    }
+   }
+  },
+  {
+   "name": "calendrier_sante",
+   "description": "Calendrier des journees, semaines et mois de sante (Octobre rose, Mois sans tabac, Journee mondiale du diabete) publie par France Care : la date telle qu'elle se lit, si elle reste a confirmer, la portee (France, Europe, monde), l'organisateur quand il est connu, et le lien vers les animations du guide sur la meme thematique. A utiliser pour preparer un plan de prevention ou une communication interne de l'annee, ou savoir quel evenement tombe un mois donne.",
+   "inputSchema": {
+    "type": "object",
+    "properties": {
+     "mois": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 12,
+      "description": "Mois, de 1 a 12. Absent : toute l'annee."
+     },
+     "annee": {
+      "type": "integer",
+      "minimum": 2024,
+      "maximum": 2100,
+      "description": "Annee. Absente : l'annee en cours si elle est publiee, sinon la suivante."
+     },
+     "sujet": {
+      "type": "string",
+      "description": "Mots du nom ou de la thematique (ex. cancer, diabete)."
+     }
+    }
+   }
   }
  ]
 }

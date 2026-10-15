@@ -1,8 +1,8 @@
 {
   "name": "france-care",
   "displayName": "France Care",
-  "version": "1.2.0",
-  "description": "Accès aux soins en France : où se soigner autour d'une commune, niveau d'accès aux professionnels de santé (APL de la DREES) et classements officiels (seuil de sous-densité, zonage de l'ARS, zones prioritaires du Pacte). Données publiques, fiabilisées par France Care.",
+  "version": "1.3.0",
+  "description": "Accès aux soins en France : où se soigner autour d'une commune, niveau d'accès aux professionnels de santé (APL de la DREES) et classements officiels (seuil de sous-densité, zonage de l'ARS, zones prioritaires du Pacte). Prévention santé en entreprise : guide sourcé des animations et calendrier des journées de santé. Données publiques, fiabilisées par France Care.",
   "author": {
     "name": "France Care",
     "email": "contact@france-care.fr",
@@ -18,6 +18,9 @@
     "FINESS",
     "DREES",
     "APL",
-    "déserts médicaux"
+    "déserts médicaux",
+    "prévention",
+    "entreprise",
+    "QVCT"
   ]
 }

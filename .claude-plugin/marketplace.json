@@ -6,14 +6,14 @@
     "url": "https://www.france-care.fr"
   },
   "metadata": {
-    "description": "Plugins Claude de France Care : accès aux soins en France."
+    "description": "Plugins Claude de France Care : accès aux soins et prévention santé en France."
   },
   "plugins": [
     {
       "name": "france-care",
       "source": "./",
-      "description": "Accès aux soins en France : où se soigner autour d'une commune, niveau d'accès aux professionnels de santé (APL de la DREES) et classements officiels. Données publiques, fiabilisées par France Care.",
-      "version": "1.2.0",
+      "description": "Accès aux soins en France : où se soigner autour d'une commune, niveau d'accès aux professionnels de santé (APL de la DREES) et classements officiels. Prévention santé en entreprise : guide sourcé des animations et calendrier santé. Données publiques, fiabilisées par France Care.",
+      "version": "1.3.0",
       "author": { "name": "France Care", "email": "contact@france-care.fr" },
       "homepage": "https://mcp.france-care.fr/plugin",
       "repository": "https://github.com/France-Care/claude-plugin-france-care",
