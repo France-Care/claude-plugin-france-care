@@ -191,6 +191,38 @@
      }
     }
    }
+  },
+  {
+   "name": "qui_saisir",
+   "description": "Qui saisir, dans quel ordre et sur quel texte, pour une démarche de santé, de handicap ou de perte d'autonomie en France : les interlocuteurs (DAC, MDPH, point d'information personnes âgées, plateforme de répit, direction et commission des usagers d'un établissement, personne qualifiée, ARS, juge, commission départementale des soins psychiatriques, CGLPL, Défenseur des droits, caisse d'assurance maladie, CCI, CADA, CMP), leur mission légale, les délais fixés par les textes (liens Légifrance), et les coordonnées locales connues du répertoire FINESS. À utiliser quand une personne, un aidant ou un professionnel ne sait pas à qui s'adresser, veut contester une décision ou faire une réclamation, ou prépare un courrier. Choisir le besoin dans la liste (appeler sans argument pour la description de chacun) ; ne JAMAIS transmettre la situation de la personne, son nom ou son état de santé : l'outil n'en a pas besoin. Rédiger soi-même le courrier avec les références servies. Dans la réponse, citer pour chaque délai l'article, sa date d'entrée en vigueur et la date de vérification, et renvoyer au lien Légifrance pour vérifier la version en vigueur (bloc verification).",
+   "inputSchema": {
+    "type": "object",
+    "properties": {
+     "besoin": {
+      "type": "string",
+      "enum": [
+       "situation_complexe",
+       "droits_handicap",
+       "aidant_epuise",
+       "perte_autonomie",
+       "reclamation_etablissement_sante",
+       "reclamation_etablissement_medico_social",
+       "droits_psychiatrie",
+       "orientation_sante_mentale",
+       "refus_de_soins_discrimination",
+       "litige_assurance_maladie",
+       "accident_medical",
+       "acces_dossier_medical",
+       "maltraitance"
+      ],
+      "description": "Le besoin, choisi dans la liste. Absent : la liste des besoins avec leur description."
+     },
+     "lieu": {
+      "type": "string",
+      "description": "Facultatif, pour les coordonnées locales et l'ARS : code postal (87000), code INSEE préfixé (insee:87085), nom exact de commune ou numéro de département (87)."
+     }
+    }
+   }
   }
  ]
 }

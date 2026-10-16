@@ -1,12 +1,13 @@
 # France Care, accès aux soins et prévention en France
 
-Le plugin France Care aide Claude à répondre à trois questions : **où se soigner autour
+Le plugin France Care aide Claude à répondre à quatre questions : **où se soigner autour
 d'une commune française** ; **que valent les indicateurs d'accès aux soins** d'un
-territoire ; **quelle action de prévention santé mener en entreprise**, et à quel moment de
-l'année. Il s'appuie sur des données publiques (répertoire FINESS des établissements,
-accessibilité potentielle localisée de la DREES, INSEE) que France Care corrige,
-géolocalise et met à jour chaque jour, et sur le guide sourcé des animations santé en
-entreprise de France Care.
+territoire ; **à qui s'adresser pour une démarche** de santé, de handicap ou de perte
+d'autonomie, et sur quel texte ; **quelle action de prévention santé mener en entreprise**,
+et à quel moment de l'année. Il s'appuie sur des données publiques (répertoire FINESS des
+établissements, accessibilité potentielle localisée de la DREES, INSEE) que France Care
+corrige, géolocalise et met à jour chaque jour, sur les textes en vigueur (Légifrance) et
+sur le guide sourcé des animations santé en entreprise de France Care.
 
 ## Installer
 
@@ -21,11 +22,11 @@ Versions antérieures : `/plugin marketplace add France-Care/claude-plugin-franc
 
 **Claude (web, bureau, mobile)** : ajoutez un connecteur personnalisé avec l'adresse
 `https://mcp.france-care.fr/mcp`. Aucun compte n'est demandé. Le connecteur donne les
-outils ; les trois skills ne viennent qu'avec le plugin.
+outils ; les quatre skills ne viennent qu'avec le plugin.
 
 ## Ce que contient le plugin
 
-- **Le connecteur France Care** (`https://mcp.france-care.fr/mcp`), cinq outils en
+- **Le connecteur France Care** (`https://mcp.france-care.fr/mcp`), six outils en
   lecture et un signalement anonyme :
   - `analyze_territory` : accès aux soins d'une commune, de son intercommunalité, de son
     département et de sa région ;
@@ -37,8 +38,12 @@ outils ; les trois skills ne viennent qu'avec le plugin.
   - `animations_sante_entreprise` : les fiches validées du guide des animations santé en
     entreprise, par thème ou par mois (déroulé, coût, partenaires, sources, date de
     vérification, lien) ;
-  - `calendrier_sante` : les journées, semaines et mois de santé de l'année.
-- **Trois skills** :
+  - `calendrier_sante` : les journées, semaines et mois de santé de l'année ;
+  - `qui_saisir` : pour un besoin choisi dans une liste fermée et un lieu, les
+    interlocuteurs à saisir dans l'ordre, leur mission, les articles en vigueur avec leur
+    date et leur lien Légifrance, les délais, et les coordonnées locales (DAC, MDPH, CMP…).
+    Il ne reçoit jamais la situation de la personne.
+- **Quatre skills** :
   - `trouver-ou-se-soigner` : chercher les lieux de soins proches et les démarches utiles
     (médecin traitant, permanence des soins, pharmacie de garde) ;
   - `lire-indicateurs-acces-aux-soins` : lire l'APL sans contresens (unités, seuil de
@@ -46,7 +51,10 @@ outils ; les trois skills ne viennent qu'avec le plugin.
     officiels (zonage de l'ARS, zones prioritaires du Pacte) ;
   - `preparer-une-animation-sante` : proposer à un employeur, un CSE ou un préventeur deux
     ou trois animations sourcées, sans chiffre inventé, et bâtir le calendrier de
-    prévention de l'année.
+    prévention de l'année ;
+  - `orienter-une-demarche` : dire qui saisir et dans quel ordre, citer chaque délai avec
+    son article, sa date et le moyen de vérifier la version en vigueur, puis rédiger le
+    courrier avec la personne, sans rien transmettre à France Care.
 
 Documentation : https://mcp.france-care.fr/plugin
 
@@ -57,6 +65,7 @@ Documentation : https://mcp.france-care.fr/plugin
 - « Compare l'accès aux soins entre Rodez et Millau. »
 - « Qu'est-ce qu'on peut organiser pour Octobre rose dans une PME de bureaux ? »
 - « Quelles journées de santé tombent en novembre ? »
+- « La MDPH a refusé la PCH de ma mère, comment contester ? »
 
 ## Données et confidentialité
 
