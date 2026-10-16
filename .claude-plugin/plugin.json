@@ -1,7 +1,7 @@
 {
   "name": "france-care",
   "displayName": "France Care",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "Accès aux soins en France : où se soigner autour d'une commune, niveau d'accès aux professionnels de santé (APL de la DREES) et classements officiels (seuil de sous-densité, zonage de l'ARS, zones prioritaires du Pacte). Qui saisir pour une démarche de santé ou de handicap, avec les textes en vigueur. Prévention santé en entreprise : guide sourcé des animations et calendrier des journées de santé. Données publiques, fiabilisées par France Care.",
   "author": {
     "name": "France Care",
@@ -9,6 +9,10 @@
     "url": "https://www.france-care.fr"
   },
   "homepage": "https://mcp.france-care.fr/plugin",
+  "icon": "./icon.png",
+  "documentationUrl": "https://mcp.france-care.fr/plugin",
+  "supportUrl": "https://www.france-care.fr/contact",
+  "privacyPolicyUrl": "https://mcp.france-care.fr/confidentialite",
   "repository": "https://github.com/France-Care/claude-plugin-france-care",
   "license": "MIT",
   "keywords": [
